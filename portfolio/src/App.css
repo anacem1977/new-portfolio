@@ -1,3 +1,36 @@
 .App {
-  text-align: center;
+  text-align: center; 
+}
+
+.animate__animated.animate__backInDown {
+  --animate-duration: 2s;
+}
+
+
+/* body {
+   background:
+    radial-gradient(#595659 3px, transparent 0px),
+    radial-gradient(#595659 3px, transparent 0px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #beb8bf 75px, #f2ebf2 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #beb8bf 76px, #f2ebf2 77px, transparent 78px, transparent 109px),
+    #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+ } */
+
+ h1 {
+  font-size: 84px;
+  color: black
+}
+
+section {
+  background-color: #ff5722;
+  height: 30vh;
+  padding-top: 2rem;
+}
+
+section p {
+  color: #fff;
+  font-size: 24px;
 }
