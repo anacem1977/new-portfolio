@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Dela+Gothic+One&display=swap');
+
 .App {
   text-align: center; 
+  background-color: #fce6db;
+  font-family: 'Arimo', sans-serif;
 }
 
 .animate__animated.animate__backInDown {
   --animate-duration: 2s;
 }
-
 
 /* body {
    background:
@@ -19,18 +22,46 @@
     background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
  } */
 
- h1 {
-  font-size: 84px;
-  color: black
-}
-
 section {
-  background-color: #ff5722;
+  background-color: #fa4700;
   height: 25vh;
   padding-top: 2rem;
 }
 
 section p {
-  color: #fff;
+  color: #fce6db;
   font-size: 24px;
+}
+
+.hola {
+  height: 45vh;
+}
+
+.msg {
+  padding-top: 5rem;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 84px;
+  color: #4a4242;
+}
+
+.whoAmI {
+  padding: 5rem 4rem 5rem 4rem;
+  color: #4a4242;
+}
+
+.whoAmI h3 {
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 34px
+}
+
+.whoAmI p {
+  text-align: justify;
+  text-indent: 1rem;;
+  font-size: 28px;
+}
+
+.scroll {
+  transform: rotate(-90deg);
+  position: fixed;
+  left: 0
 }
