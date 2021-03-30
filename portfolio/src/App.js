@@ -4,6 +4,7 @@ import animate__animated from "animate.css"
 import { Route } from "react-router-dom"
 import WhoAmI from "./components/whoAmI"
 import WhereIveBeen from "./components/whereIveBeen"
+import WhatIveDone from "./components/whatIveDone"
 
 class App extends Component {
   constructor(props) {
@@ -58,6 +59,8 @@ class App extends Component {
         <Route path="/" render= {(props) => ( <WhoAmI/>)} />
 
         <Route path="/" render= {(props) => ( <WhereIveBeen/>)} />
+
+        <Route path="/" render= {(props) => ( <WhatIveDone/>)} />
 
       </div>
     )
