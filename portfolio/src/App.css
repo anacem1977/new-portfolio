@@ -44,17 +44,17 @@ section p {
   color: #4a4242;
 }
 
-.whoAmI {
+.subtitle{
   padding: 5rem 4rem 5rem 4rem;
   color: #4a4242;
 }
 
-.whoAmI h3 {
+.subtitle h3 {
   font-family: 'Dela Gothic One', cursive;
   font-size: 34px
 }
 
-.whoAmI p {
+.subtitle p {
   text-align: justify;
   text-indent: 1rem;;
   font-size: 28px;
