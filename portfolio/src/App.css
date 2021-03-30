@@ -65,3 +65,13 @@ section p {
   position: fixed;
   left: 0
 }
+
+nav {
+  border: 1px solid red;
+  flex-direction: column;
+  width: 2rem;
+  position: fixed;
+  right: 0;
+  top: 10;
+  color: #4a4242;
+}
