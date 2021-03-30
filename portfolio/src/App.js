@@ -6,6 +6,7 @@ import WhoAmI from "./components/whoAmI"
 import WhereIveBeen from "./components/whereIveBeen"
 import WhatIveDone from "./components/whatIveDone"
 import WhereImGoing from "./components/whereImGoing"
+import FunFacts from "./components/funFacts"
 
 class App extends Component {
   constructor(props) {
@@ -64,6 +65,8 @@ class App extends Component {
         <Route path="/" render= {(props) => ( <WhatIveDone/>)} />
 
         <Route path="/" render= {(props) => ( <WhereImGoing/>)} />
+
+        <Route path="/" render= {(props) => ( <FunFacts/>)} />
 
       </div>
     )
