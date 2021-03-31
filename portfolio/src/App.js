@@ -60,10 +60,21 @@ class App extends Component {
         </section>
 
         <nav>
-          <p><FontAwesomeIcon icon={['fab', 'linkedin']} size="2x"></FontAwesomeIcon></p>
-          <p><FontAwesomeIcon icon={['fab', 'facebook-messenger']} size="2x"></FontAwesomeIcon></p>
-          <p> <FontAwesomeIcon icon={['fab', 'github']} size="2x"></FontAwesomeIcon></p>
-          <p><FontAwesomeIcon icon="envelope" size="2x"></FontAwesomeIcon></p>
+          <a href="https://www.linkedin.com/in/ana-cecilia-maldonado-cervantes-a146161ba" target= "_blank" rel="noreferrer" className="faIcon">
+            <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x"></FontAwesomeIcon>
+          </a>
+          <p></p>
+          <a href="https://wa.me/528712117641" target="_blank" rel="noreferrer" className="faIcon">
+            <FontAwesomeIcon icon={['fab', 'whatsapp-square']} size="2x"></FontAwesomeIcon>
+          </a>
+          <p></p>
+          <a href="https://github.com/anacem1977" target= "_blank" rel="noreferrer" className="faIcon">
+            <FontAwesomeIcon icon={['fab', 'github']} size="2x"></FontAwesomeIcon>
+          </a>
+          <p></p>
+          <a href="mailto:anace_m@yahoo.com" className="faIcon">
+            <FontAwesomeIcon icon="envelope" size="2x"></FontAwesomeIcon>
+          </a>
         </nav>
 
         <div className="hola">

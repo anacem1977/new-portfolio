@@ -67,11 +67,25 @@ section p {
 }
 
 nav {
-  border: 1px solid red;
   flex-direction: column;
   width: 2rem;
   position: fixed;
   right: 0;
   top: 10;
+  color: #fa4700;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #59554e;
+  text-shadow: 1px 1px #59554e
+}
+
+a.ga {
   color: #4a4242;
+  text-shadow: 1px 1px #59554e
+}
+
+a.ga:hover, a.faIcon:hover {
+  color: #fa4700
 }
