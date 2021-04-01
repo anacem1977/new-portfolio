@@ -1,12 +1,12 @@
 import './App.css';
 import react, {Component} from "react"
-import animate__animated from "animate.css"
-import { Route } from "react-router-dom"
+import { Route, Link } from "react-router-dom"
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {fab} from "@fortawesome/free-brands-svg-icons"
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 
+import Home from "./components/homePage"
 import WhoAmI from "./components/whoAmI"
 import WhereIveBeen from "./components/whereIveBeen"
 import WhatIveDone from "./components/whatIveDone"
@@ -19,21 +19,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      change: true,
       scroll: 0
     }
-  }
-
-  handleEnglish = (event) => {
-    this.setState({
-      change:false
-    })
-  }
-
-  handleSpanish = (event) => {
-    this.setState({
-      change:true
-    })
   }
 
   componentDidMount() {
@@ -45,32 +32,27 @@ class App extends Component {
   }
   
   handleScroll = (event) => {
-    console.log("scrolling")
     this.setState ({
       scroll: event.path[1].scrollY
     })
     console.log(this.state.scroll)
   }
 
-  handleHide = (event) => {
-    if (this.state.scroll > 10) {
-      event.target.style.display = "none"
-    }
-  }
-
-  handleShow = (event) => {
-    console.log(event.target)
-    if (this.state.scroll < 200) {
-      event.target.style.display = "none"
-    }
-  }
-
   render( ) {
     return (
       <div className="App" handleScroll={this.hanldeScroll}>
         <section className="topColor">
-          <p className="menu">Menu</p>
+          <nav className="horizontal">
+            <Link to ="/">Home</Link>
+            <Link to = "/who">Who am I?</Link>
+            <Link to = "/where">Where I've been?</Link>
+            <Link to = "/what">What I've done?</Link>
+            <Link to = "/going">Where I'm going?</Link>
+            <Link to = "/fun">Fun Facts</Link>
+            <Link to = "/contact">Contact</Link>
+          </nav>
         </section>
+
         {this.state.scroll < 10 ?
           <section className="topColorFull">
             <p className="menu">Menu</p>
@@ -80,8 +62,8 @@ class App extends Component {
             <p className="menu">Menu</p>
           </section>
       }
-       
-       <nav>
+
+       <nav className="vertical">
           <a href="https://www.linkedin.com/in/ana-cecilia-maldonado-cervantes-a146161ba" target= "_blank" rel="noreferrer" className="faIcon">
             <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x"></FontAwesomeIcon>
           </a>
@@ -99,26 +81,16 @@ class App extends Component {
           </a>
         </nav>
 
-        <div className="hello">
-          {this.state.change === true ? <h1 onMouseEnter={this.handleEnglish} className="msg">HELLO</h1> : <h1 onMouseEnter={this.handleSpanish} className="msg">HOLA</h1> }
-          <div className="square"></div>
-        </div>
-
         <div>
             <p className="scroll"> ← scroll</p>
         </div>
         
-        <Route path="/" render= {(props) => ( <WhoAmI handleShow={this.handleShow} scroll={this.state.scroll}/>)} />
+        <Route exact path="/" render= {(props) => ( <Home/>)} /> 
 
-        <Route path="/" render= {(props) => ( <WhereIveBeen/>)} />
-
-        <Route path="/" render= {(props) => ( <WhatIveDone/>)} />
-
-        <Route path="/" render= {(props) => ( <WhereImGoing/>)} />
-
-        <Route path="/" render= {(props) => ( <FunFacts/>)} />
+        <Route path="/who" render= {(props) => ( <WhoAmI/>)} />
 
       </div>
+      
     )
   }
 } 

@@ -20,11 +20,11 @@ section.topColorFull {
   background-color: #fa4700;
   height: 32vh;
   animation: topColorBar;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-section.topColor, section.topColorBack {
+section.topColor {
   background-color: #fa4700;
   height:8vh;
   padding-top: 2rem;
@@ -39,9 +39,12 @@ section.topColor, section.topColorBack {
 }
 
 section.topColorBack {
+  background-color: #fa4700;
+  height: 32vh;
   animation: rollBack;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
 }
 
 .menu {
@@ -56,8 +59,8 @@ section.topColorBack {
   color: #4a4242;
 }
 
-.subtitle{
-  padding: 5rem 4rem 5rem 4rem;
+.subtitle, .intro {
+  padding: 5rem 4rem 1rem 4rem;
   color: #4a4242;
 }
 
@@ -66,7 +69,7 @@ section.topColorBack {
   font-size: 34px
 }
 
-.subtitle p {
+.subtitle p, .intro p {
   text-align: justify;
   text-indent: 1rem;;
   font-size: 28px;
@@ -78,7 +81,7 @@ section.topColorBack {
   left: 0
 }
 
-nav {
+nav.vertical {
   flex-direction: column;
   width: 2rem;
   position: fixed;
@@ -103,20 +106,17 @@ a.ga:hover, a.faIcon:hover {
 
 .container {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 50% 50%;
 }
 
 .myPic {
-  grid-column-start: 2;
-  justify-self: end;
-  max-width: 30vw;
-  border-radius: 10%;
-  border: 5px solid #fa4700;
-  box-shadow: 5px 5px 10px #59554e;
+  grid-column-start: 1;
+  justify-self: start;
+  max-width: 40vw;
 }
 
 .me {
-  grid-column-start: 1;
+  grid-column-start: 2;
   align-self: center;
 }
 
