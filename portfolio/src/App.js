@@ -12,6 +12,7 @@ import WhereIveBeen from "./components/whereIveBeen"
 import WhatIveDone from "./components/whatIveDone"
 import WhereImGoing from "./components/whereImGoing"
 import FunFacts from "./components/funFacts"
+import Resume from "./components/resume"
 
 library.add(fab, faEnvelope)
 
@@ -53,16 +54,6 @@ class App extends Component {
           </nav>
         </section>
 
-        {this.state.scroll < 10 ?
-          <section className="topColorFull">
-            <p className="menu">Menu</p>
-          </section>
-          : 
-          <section className="topColorBack">
-            <p className="menu">Menu</p>
-          </section>
-      }
-
        <nav className="vertical">
           <a href="https://www.linkedin.com/in/ana-cecilia-maldonado-cervantes-a146161ba" target= "_blank" rel="noreferrer" className="faIcon">
             <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x"></FontAwesomeIcon>
@@ -88,6 +79,16 @@ class App extends Component {
         <Route exact path="/" render= {(props) => ( <Home/>)} /> 
 
         <Route path="/who" render= {(props) => ( <WhoAmI/>)} />
+
+        <Route path="/where" render= {(props) => ( <WhereIveBeen/>)} />
+
+        <Route path="/what" render= {(props) => ( <WhatIveDone/>)} />
+
+        <Route path="/going" render= {(props) => ( <WhereImGoing/>)} />
+
+        <Route path="/fun" render= {(props) => ( <FunFacts/>)} />
+
+        <Route path="/resume" render= {(props) => ( <Resume/>)} />
 
       </div>
       

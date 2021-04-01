@@ -11,17 +11,9 @@ body {
   background-color: #fce6db;
 }
 
- @keyframes topColorBar {
-  0% {height: 8vh}
-  100% {height: 32vh}
-}
-
 section.topColorFull {
   background-color: #fa4700;
   height: 32vh;
-  animation: topColorBar;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
 }
 
 section.topColor {
@@ -33,33 +25,24 @@ section.topColor {
   top: 0;
 }
 
-@keyframes rollBack {
-  0% {height: 32vh}
-  100% {height: 8vh}
-}
-
-section.topColorBack {
-  background-color: #fa4700;
-  height: 32vh;
-  animation: rollBack;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-}
-
 .menu {
   color: #fce6db;
   font-size: 20px;
 }
 
 .msg {
-  margin-top: 8rem;
+  margin-top: 6rem;
   font-family: 'Dela Gothic One', cursive;
   font-size: 84px;
   color: #4a4242;
 }
 
-.subtitle, .intro {
+.subtitle {
+  padding: 10rem 4rem 1rem 4rem;
+  color: #4a4242;
+}
+
+.intro {
   padding: 5rem 4rem 1rem 4rem;
   color: #4a4242;
 }
@@ -78,7 +61,8 @@ section.topColorBack {
 .scroll {
   transform: rotate(-90deg);
   position: fixed;
-  left: 0
+  left: 0;
+  top: 70vh
 }
 
 nav.vertical {
@@ -112,7 +96,7 @@ a.ga:hover, a.faIcon:hover {
 .myPic {
   grid-column-start: 1;
   justify-self: start;
-  max-width: 40vw;
+  max-width: 38vw;
 }
 
 .me {
@@ -138,4 +122,28 @@ a.ga:hover, a.faIcon:hover {
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-timing-function:linear;
+}
+
+.resume h3, .resume h2 {
+  text-align: center;
+}
+
+.resume {
+  text-align: justify;
+}
+
+.resume h2 {
+  font-size: 28px
+}
+
+.resume h4 {
+  font-size: 24px;
+}
+
+.resume h5 {
+  font-size: 22px;
+}
+
+.resume p, .resume li {
+  font-size: 20px;
 }
