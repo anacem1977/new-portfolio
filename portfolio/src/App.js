@@ -52,14 +52,36 @@ class App extends Component {
     console.log(this.state.scroll)
   }
 
+  handleHide = (event) => {
+    if (this.state.scroll > 10) {
+      event.target.style.display = "none"
+    }
+  }
+
+  handleShow = (event) => {
+    console.log(event.target)
+    if (this.state.scroll < 200) {
+      event.target.style.display = "none"
+    }
+  }
+
   render( ) {
     return (
       <div className="App" handleScroll={this.hanldeScroll}>
-        <section className="animate__animated animate__fadeInDown animate__delay-1s">
-            <p>Menu</p>
+        <section className="topColor">
+          <p className="menu">Menu</p>
         </section>
-
-        <nav>
+        {this.state.scroll < 10 ?
+          <section className="topColorFull">
+            <p className="menu">Menu</p>
+          </section>
+          : 
+          <section className="topColorBack">
+            <p className="menu">Menu</p>
+          </section>
+      }
+       
+       <nav>
           <a href="https://www.linkedin.com/in/ana-cecilia-maldonado-cervantes-a146161ba" target= "_blank" rel="noreferrer" className="faIcon">
             <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x"></FontAwesomeIcon>
           </a>
@@ -77,16 +99,16 @@ class App extends Component {
           </a>
         </nav>
 
-        <div className="hola">
-            {this.state.change === true ? <h1 onMouseEnter={this.handleEnglish} className="animate__animated animate__swing msg">HELLO</h1> : <h1 onMouseEnter={this.handleSpanish} className="animate__animated animate__bounce msg">HOLA</h1> }
-           
+        <div className="hello">
+          {this.state.change === true ? <h1 onMouseEnter={this.handleEnglish} className="msg">HELLO</h1> : <h1 onMouseEnter={this.handleSpanish} className="msg">HOLA</h1> }
+          <div className="square"></div>
         </div>
 
         <div>
             <p className="scroll"> ← scroll</p>
         </div>
         
-        <Route path="/" render= {(props) => ( <WhoAmI/>)} />
+        <Route path="/" render= {(props) => ( <WhoAmI handleShow={this.handleShow} scroll={this.state.scroll}/>)} />
 
         <Route path="/" render= {(props) => ( <WhereIveBeen/>)} />
 

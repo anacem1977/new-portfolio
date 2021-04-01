@@ -1,44 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Dela+Gothic+One&display=swap');
 
+
 .App {
   text-align: center; 
   background-color: #fce6db;
   font-family: 'Arimo', sans-serif;
 }
 
-.animate__animated.animate__backInDown {
-  --animate-duration: 2s;
+body {
+  background-color: #fce6db;
 }
 
-/* body {
-   background:
-    radial-gradient(#595659 3px, transparent 0px),
-    radial-gradient(#595659 3px, transparent 0px),
-    linear-gradient(#fff 4px, transparent 0),
-    linear-gradient(45deg, transparent 74px, transparent 75px, #beb8bf 75px, #f2ebf2 76px, transparent 77px, transparent 109px),
-    linear-gradient(-45deg, transparent 75px, transparent 76px, #beb8bf 76px, #f2ebf2 77px, transparent 78px, transparent 109px),
-    #fff;
-    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
-    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
- } */
+ @keyframes topColorBar {
+  0% {height: 8vh}
+  100% {height: 32vh}
+}
 
-section {
+section.topColorFull {
   background-color: #fa4700;
-  height: 25vh;
+  height: 32vh;
+  animation: topColorBar;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+section.topColor, section.topColorBack {
+  background-color: #fa4700;
+  height:8vh;
   padding-top: 2rem;
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
-section p {
+@keyframes rollBack {
+  0% {height: 32vh}
+  100% {height: 8vh}
+}
+
+section.topColorBack {
+  animation: rollBack;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.menu {
   color: #fce6db;
-  font-size: 24px;
-}
-
-.hola {
-  height: 45vh;
+  font-size: 20px;
 }
 
 .msg {
-  padding-top: 5rem;
+  margin-top: 8rem;
   font-family: 'Dela Gothic One', cursive;
   font-size: 84px;
   color: #4a4242;
@@ -70,9 +82,8 @@ nav {
   flex-direction: column;
   width: 2rem;
   position: fixed;
-  right: 0;
-  top: 10;
-  color: #fa4700;
+  right: 5px;
+  top: 70vh;
 }
 
 a, a:link, a:visited, a:hover, a:active {
@@ -88,4 +99,43 @@ a.ga {
 
 a.ga:hover, a.faIcon:hover {
   color: #fa4700
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.myPic {
+  grid-column-start: 2;
+  justify-self: end;
+  max-width: 30vw;
+  border-radius: 10%;
+  border: 5px solid #fa4700;
+  box-shadow: 5px 5px 10px #59554e;
+}
+
+.me {
+  grid-column-start: 1;
+  align-self: center;
+}
+
+@keyframes greetings {
+  0% {left: 31vw; top: -18vh; background-color: #fce6db}
+  20% {background-color: #fce6db}
+  40% {background-color: #fce6db}
+  60% {background-color: #fce6db}
+  80% {background-color: #fce6db}
+  95% {background-color: #fce6db}
+  100% {left: 66vw; top: -18vh}
+}
+
+.square {
+  width: 410px;
+  height: 75px;
+  position: relative;
+  animation-name: greetings;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function:linear;
 }
