@@ -26,14 +26,14 @@ render () {
                         <Link to = "/nasa">
                             <img src="https://i.imgur.com/k2EHVzv.png?1" alt="nasa" width="350vw"/>
                         </Link>
-                        <div className="description">NASA</div>
+                        <div className="description">MISC Space App</div>
                     </div>
                 </div>
 
                 <div className="resp">
                     <div className="gallery">
-                        <Link to = "/home">
-                            <img src="https://i.imgur.com/3uv4Hpg.png" alt="beer encyclopedia" width="320vw"/>
+                        <Link to = "/beer">
+                            <img src="https://i.imgur.com/CbR7JX4.png?1" alt="beer encyclopedia" width="350vw"/>
                         </Link>
                         <div className="description">Beer Encyclopedia</div>
                     </div>

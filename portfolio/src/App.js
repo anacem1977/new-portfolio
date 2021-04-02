@@ -15,6 +15,7 @@ import FunFacts from "./components/funFacts"
 import Resume from "./components/resume"
 import Trivia from "./components/trivia"
 import Nasa from "./components/nasa"
+import Beer from "./components/beer"
 
 library.add(fab, faEnvelope, faHandPointLeft)
 
@@ -81,22 +82,15 @@ class App extends Component {
         </div>
         
         <Route exact path="/" render= {(props) => ( <Home/>)} /> 
-
         <Route path="/who" render= {(props) => ( <WhoAmI/>)} />
-
         <Route path="/where" render= {(props) => ( <WhereIveBeen/>)} />
-
         <Route path="/what" render= {(props) => ( <WhatIveDone/>)} />
-
         <Route path="/going" render= {(props) => ( <WhereImGoing/>)} />
-
         <Route path="/fun" render= {(props) => ( <FunFacts/>)} />
-
         <Route path="/resume" render= {(props) => ( <Resume/>)} />
-
         <Route path="/trivia" render= {(props) => ( <Trivia/>)} />
-
         <Route path="/nasa" render= {(props) => ( <Nasa/>)} />
+        <Route path="/beer" render= {(props) => ( <Beer/>)} />
 
       </div>
       
