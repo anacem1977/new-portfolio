@@ -55,7 +55,7 @@ render () {
                 <h5>Certificate: Software Engineering</h5>
                 <p><b>General Assembly - Online. March 2021</b></p>
                 <ul>
-                    <li>Engineering Immersive Reskilling Program</li>
+                    <li>Engineering Immersive Reskilling Program - 480 hours</li>
                     <li>Front End Web Development, Full Stack Development, Front End Framework and Native Python.</li>
                 </ul>
                 

@@ -11,14 +11,9 @@ body {
   background-color: #fce6db;
 }
 
-section.topColorFull {
-  background-color: #fa4700;
-  height: 32vh;
-}
-
 section.topColor {
   background-color: #fa4700;
-  height:8vh;
+  height:10vh;
   padding-top: 2rem;
   position: fixed;
   width: 100vw;
@@ -146,4 +141,86 @@ a.ga:hover, a.faIcon:hover {
 
 .resume p, .resume li {
   font-size: 20px;
+}
+
+a.topLink, a.topLink:link, a.topLink:visited, a.topLink:hover, a.topLink:active {
+  font-size: 22px;
+  color: #fce6db;
+  padding: 0rem 1rem 0rem 1rem;
+  text-shadow: none;
+}
+
+nav.horizontal {
+  margin-bottom: 1rem;
+}
+
+div.gallery {
+  margin: 1rem;
+  border: 1px solid red;
+  float: left;
+  width: 25vw;
+}
+
+div.gallery:hover {
+  border: 1px solid blue;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto
+}
+
+div.description {
+  padding: 1rem;
+}
+
+.resp {
+  justify-content: center;
+  padding: 0 1rem;
+  float: left;
+  width: 30%
+}
+
+@media only screen and (max-width: 700px) {
+  .resp {
+    width: 50%;
+    margin: 1rem 0
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .resp {
+    width: 100%
+  }
+}
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.project {
+  font-size: 26px;
+  text-align: left;
+  margin-left: 5rem;
+}
+
+a.projectLink, a.projectLink:link, a.projectLink:visited, a.projectLink:hover, a.projectLink:active {
+  font-size: 22px;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  text-shadow: none;
+  border: 4px solid #fa4700;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #59554e;
+}
+
+a.projectLink:hover, a.projectLink:active {
+  background-color: #fa4700;
+  color: #fce6db;
+}
+
+.projectNav {
+  margin: 3rem 0 3rem 0;
 }

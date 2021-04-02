@@ -4,7 +4,7 @@ import { Route, Link } from "react-router-dom"
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {fab} from "@fortawesome/free-brands-svg-icons"
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
+import {faEnvelope, faHandPointLeft} from "@fortawesome/free-solid-svg-icons"
 
 import Home from "./components/homePage"
 import WhoAmI from "./components/whoAmI"
@@ -13,8 +13,9 @@ import WhatIveDone from "./components/whatIveDone"
 import WhereImGoing from "./components/whereImGoing"
 import FunFacts from "./components/funFacts"
 import Resume from "./components/resume"
+import Trivia from "./components/trivia"
 
-library.add(fab, faEnvelope)
+library.add(fab, faEnvelope, faHandPointLeft)
 
 class App extends Component {
   constructor(props) {
@@ -44,13 +45,15 @@ class App extends Component {
       <div className="App" handleScroll={this.hanldeScroll}>
         <section className="topColor">
           <nav className="horizontal">
-            <Link to ="/">Home</Link>
-            <Link to = "/who">Who am I?</Link>
-            <Link to = "/where">Where I've been?</Link>
-            <Link to = "/what">What I've done?</Link>
-            <Link to = "/going">Where I'm going?</Link>
-            <Link to = "/fun">Fun Facts</Link>
-            <Link to = "/contact">Contact</Link>
+            <Link to ="/" className="topLink">Home</Link>
+            <Link to = "/who" className="topLink">Who am I?</Link>
+            <Link to = "/where" className="topLink">Where I've been?</Link>
+            <Link to = "/what" className="topLink">What I've done?</Link>
+            <Link to = "/going" className="topLink">Where I'm going?</Link>
+          </nav>
+          <nav className="horizontal">
+            <Link to = "/fun" className="topLink">Fun Facts</Link>
+            <Link to = "/contact" className="topLink">Contact</Link>
           </nav>
         </section>
 
@@ -89,6 +92,8 @@ class App extends Component {
         <Route path="/fun" render= {(props) => ( <FunFacts/>)} />
 
         <Route path="/resume" render= {(props) => ( <Resume/>)} />
+
+        <Route path="/trivia" render= {(props) => ( <Trivia/>)} />
 
       </div>
       
