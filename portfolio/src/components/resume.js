@@ -1,22 +1,28 @@
 import React, {Component} from 'react';
+import { Link } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Resume extends Component {
 
 
 render () {
     return (
-        <div className="subtitle resume">
-            <div>
-                <nav className="horizontal">
-                    <a href="#education">Education</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#language">Languages</a>
-                    <a href="#other">Other</a>
-                </nav>
+        <div >
+            <div className="subtitle resume">
 
                 <h3>ANA CECILIA MALDONADO CERVANTES</h3>
+
+                <nav className="horizontal">
+                    <a href="#workhistory" className="localLink">Work History</a>
+                    <a href="#education" className="localLink">Education</a>
+                    <a href="#skills" className="localLink">Skills</a>
+                    <a href="#language" className="localLink">Languages</a>
+                    <a href="#other" className="localLink">Other</a>
+                    <Link to = "/where" className="faIcon">
+                    <FontAwesomeIcon icon="hand-point-left" size="2x"></FontAwesomeIcon>
+                </Link>
+                </nav>
                 
-                <h5 id="workhistory">Work History</h5>
                 <h5>Global Planning Lead - John Deere Power Systems</h5>
                 <p><b>Jun 2013 to Oct 2020</b></p>
                 <ul>
@@ -90,9 +96,11 @@ render () {
                         <li>Participation in Mentoring program at Tec de Monterrey for undergraduates.</li>
                     </ul>
                     <hr></hr>
-
             </div>
-
+            <div>
+                <p className="scroll"> ← scroll</p>
+                <a href="#top" className="backToTop"> top →</a>
+            </div>
         </div>
         
     )

@@ -76,10 +76,6 @@ class App extends Component {
             <FontAwesomeIcon icon="envelope" size="2x"></FontAwesomeIcon>
           </a>
         </nav>
-
-        <div>
-            <p className="scroll"> ← scroll</p>
-        </div>
         
         <Route exact path="/" render= {(props) => ( <Home/>)} /> 
         <Route path="/who" render= {(props) => ( <WhoAmI/>)} />

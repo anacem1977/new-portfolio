@@ -53,12 +53,6 @@ section.topColor {
   font-size: 28px;
 }
 
-.scroll {
-  transform: rotate(-90deg);
-  position: fixed;
-  left: 0;
-  top: 70vh
-}
 
 nav.vertical {
   flex-direction: column;
@@ -156,13 +150,14 @@ nav.horizontal {
 
 div.gallery {
   margin: 1rem;
-  border: 1px solid red;
+  border: 1px solid #59554e;
   float: left;
   width: 25vw;
 }
 
 div.gallery:hover {
-  border: 1px solid blue;
+  border: 1px solid #fa4700;
+  color:#fa4700;
 }
 
 div.gallery img {
@@ -172,6 +167,7 @@ div.gallery img {
 
 div.description {
   padding: 1rem;
+  font-size: 24px;
 }
 
 .resp {
@@ -223,4 +219,36 @@ a.projectLink:hover, a.projectLink:active {
 
 .projectNav {
   margin: 3rem 0 3rem 0;
+}
+
+.scroll {
+  transform: rotate(-90deg);
+  position: fixed;
+  left: 0rem;
+  top: 70vh;
+  font-size: 16px;
+}
+
+.backToTop {
+  transform: rotate(-90deg);
+  position: fixed;
+  left: 0.5rem;
+  top: 90vh;
+  font-size: 18px;
+  text-shadow: none
+}
+
+a.backToTop {
+  text-shadow: none;
+  color: #4a4242;
+}
+
+a.localLink, a.localLink:link, a.localLink:visited, a.localLink:hover, a.localLink:active {
+  font-size: 24px;
+  padding: 0rem 2rem 0rem 0rem;
+  text-shadow: 1px 1px #59554e
+}
+
+a.localLink:hover, a.localLink:active, a.backToTop:hover, a.backToTop:active {
+  color: #fa4700;
 }
