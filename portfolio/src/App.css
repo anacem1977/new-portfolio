@@ -252,3 +252,31 @@ a.localLink, a.localLink:link, a.localLink:visited, a.localLink:hover, a.localLi
 a.localLink:hover, a.localLink:active, a.backToTop:hover, a.backToTop:active {
   color: #fa4700;
 }
+
+.certificate {
+  width: 200px;
+  height: 200px;
+  float: right;
+  object-fit: cover
+}
+
+.resumeContainer {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.resumePic {
+  grid-column-start: 2;
+  justify-self: center;
+  padding-bottom: 1rem;
+}
+
+.me {
+  grid-column-start: 2;
+  align-self: center;
+}
+
+.certificate {
+  box-shadow: 5px 5px 5px #59554e;
+  margin-bottom: 1rem;
+}

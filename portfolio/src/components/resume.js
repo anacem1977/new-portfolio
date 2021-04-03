@@ -33,7 +33,7 @@ render () {
                 <h5>S250 Engine Sunset Project - Motores John Deere</h5>
                 <p><b>Jan to Dec 2013</b></p>
                 <ul>
-                    <li>Responsible for coordinating the end of production of the S250 engine by working alon with Marketing, Production Planning, Purchasing and Specifications departments to minimize raw material obsolescence and ensure all customer requirements were met considering potential  needs for service in the following years.</li>
+                    <li>Responsible for coordinating the end of production of the S250 engine by working along with Marketing, Production Planning, Purchasing and Specifications departments to minimize raw material obsolescence and ensure all customer requirements were met considering potential  needs for service in the following years.</li>
                 </ul>
                 
                 <h5>Sr. Engineer, Product Engineering and Specs - Motores John Deere</h5>
@@ -58,18 +58,34 @@ render () {
                 </ul>
                 <hr></hr>
                 <h5 id="education">Education</h5>
-                <h5>Certificate: Software Engineering</h5>
-                <p><b>General Assembly - Online. March 2021</b></p>
-                <ul>
-                    <li>Engineering Immersive Reskilling Program - 480 hours</li>
-                    <li>Front End Web Development, Full Stack Development, Front End Framework and Native Python.</li>
-                </ul>
+                <div className="resumeContainer">
+                    <div className="text">
+                        <h5>Certificate: Software Engineering</h5>
+                        <p><b>General Assembly - Online. March 2021</b></p>
+                        <ul>
+                            <li>Engineering Immersive Reskilling Program</li>
+                            <li>Front End Web Development, Full Stack Development, Front End Framework and Native Python.</li>
+                        </ul>
+                    </div>
+                    <div className="resumePic">
+                    <a href="/SEIR.png" target="_blank">
+                        <img src="https://i.imgur.com/Ikf3ftx.png" alt="certificate" className="certificate"/>
+                    </a>
+                    </div>
                 
-                <h5>Diploma: Data Science</h5>
-                <p><b>Tec de Monterrey - Online. January 2021</b></p>
-                <ul>
-                    <li>Data Science: Decision Making with Predictive Analysis</li>
-                </ul>
+                    <div className="text">
+                        <h5>Diploma: Data Science</h5>
+                        <p><b>Tec de Monterrey - Online. January 2021</b></p>
+                        <ul>
+                            <li>Data Science: Decision Making with Predictive Analysis</li>
+                        </ul>
+                    </div>
+                    <div className="resumePic">
+                    <a href="/dataScience.png" target="_blank">
+                        <img src="https://i.imgur.com/fMyFFJC.png" alt="diploma" className="certificate"/>
+                    </a>
+                    </div>
+                </div>
                 
                 <h5>Bachelor's Degree: Industrial and Systems Engineering</h5>
                 <p><b>Tec de Monterrey - Monterrey, N.L., MEX. 1999</b></p>
