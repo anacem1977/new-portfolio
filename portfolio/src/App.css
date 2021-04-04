@@ -98,7 +98,7 @@ a.ga:hover, a.faIcon:hover {
   0% {left: 28vw; top: -18vh; background-color: #fce6db}
   20% {background-color: #fce6db}
   40% {background-color: #fce6db}
-  60% {background-color: #fce6db}
+  60% {background-color: #fce6db; width: 300px}
   80% {background-color: #fce6db}
   95% {background-color: #fce6db}
   100% {left: 64vw; top: -18vh; width: 200px}
@@ -109,7 +109,7 @@ a.ga:hover, a.faIcon:hover {
   height: 75px;
   position: relative;
   animation-name: greetings;
-  animation-duration: 2s;
+  animation-duration: 2.5s;
   animation-fill-mode: forwards;
   animation-timing-function:linear;
 }
@@ -143,6 +143,10 @@ a.topLink, a.topLink:link, a.topLink:visited, a.topLink:hover, a.topLink:active 
   color: #fce6db;
   padding: 0rem 1rem 0rem 1rem;
   text-shadow: none;
+}
+
+a.topLink:hover, a.topLink:active {
+  font-weight: bold;
 }
 
 nav.horizontal {

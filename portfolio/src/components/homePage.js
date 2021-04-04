@@ -25,7 +25,7 @@ render () {
         <div className="subtitle">
 
             <div className="hello">
-                {this.state.change === true ? <h1 onMouseEnter={this.handleEnglish} className="msg">&lt; HELLO &gt;</h1> : <h1 onMouseEnter={this.handleSpanish} className="msg">&lt; HOLA &gt;</h1> }
+                {this.state.change === true ? <h1 onMouseEnter={this.handleEnglish} className="msg">&lt; HELLO/&gt;</h1> : <h1 onMouseEnter={this.handleSpanish} className="msg">&lt; HOLA/&gt;</h1> }
                 <div className="square"></div>
             </div>
 

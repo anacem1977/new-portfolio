@@ -52,12 +52,12 @@ render () {
                 <h5>Product Engineering and Specifications - Motores John Deere</h5>
                 <p><b>Oct 2001 to Dec 2009</b></p>
                 <ul>
-                    <li>Held several positions of increasing responsibility such as coordination of implementation of engineering changes for current and new engine applications.</li>
+                    <li id="education">Held several positions of increasing responsibility such as coordination of implementation of engineering changes for current and new engine applications.</li>
                     <li>PDP Module representative for the SAP Implementation.</li>
                     <li>Supervisor for Specifications Analysts.</li>
                 </ul>
                 <hr></hr>
-                <h5 id="education">Education</h5>
+                <h5>Education</h5>
                 <div className="resumeContainer">
                     <div className="text">
                         <h5>Certificate: Software Engineering</h5>
