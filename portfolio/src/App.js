@@ -4,7 +4,7 @@ import { Route, Link } from "react-router-dom"
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {fab} from "@fortawesome/free-brands-svg-icons"
-import {faEnvelope, faHandPointLeft, faDatabase} from "@fortawesome/free-solid-svg-icons"
+import {faEnvelope, faHandPointLeft, faDatabase, faCommentDots} from "@fortawesome/free-solid-svg-icons"
 
 import Home from "./components/homePage"
 import WhoAmI from "./components/whoAmI"
@@ -17,8 +17,9 @@ import Trivia from "./components/trivia"
 import Nasa from "./components/nasa"
 import Beer from "./components/beer"
 import Contact from "./components/contact"
+import Comment from "./components/commentsForm"
 
-library.add(fab, faEnvelope, faHandPointLeft, faDatabase)
+library.add(fab, faEnvelope, faHandPointLeft, faDatabase, faCommentDots)
 
 class App extends Component {
   constructor(props) {
@@ -89,6 +90,7 @@ class App extends Component {
         <Route path="/nasa" render= {(props) => ( <Nasa/>)} />
         <Route path="/beer" render= {(props) => ( <Beer/>)} />
         <Route path="/contact" render= {(props) => ( <Contact/>)} />
+        <Route path="/comment" render= {(props) => ( <Comment/>)} />
 
       </div>
       
