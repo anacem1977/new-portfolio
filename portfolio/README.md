@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Ana Cecilia Maldonado Cervantes - Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+My very own personal portfolio for everyone (including potential employers) to check out my experience and projects 👩🏻‍💻
 
-In the project directory, you can run:
+![GitHub last commit](https://img.shields.io/github/last-commit/anacem1977/new-portfolio?style=plastic)
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Table of Contents
+1. [General Info](#general-info)
+4. [Dependencies](#dependencies)
+5. [Structure](#structure)
+    + [Back End](#back-end)
+    + [Front End](#front-end)
+6. [Installation](#installation)
+7. [Author](#author)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## General Info
+You will be able to navigate through the different sections of the portfolio to learn more about me, leave comments and contact me. 
 
-### `npm run build`
+ ---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Dependencies
+| Project      | Home Page                                    |
+|--------------|----------------------------------------------|
+| Express      | <https://expressjs.com/>                     |
+| Body Parser      | <https://www.npmjs.com/package/body-parser>                     |
+| CORS      | <https://enable-cors.org/>                     |
+| method-override      | <https://www.npmjs.com/package/method-override>                     |
+| Sequelize      | <https://sequelize.org/>                     |
+| PostgresSQL     | <https://www.postgresql.org/>                     |
+| React        | <https://reactjs.org/>                       |
+| Axios       | <https://www.npmjs.com/package/axios/>                |
+| React Router  | <https://reactrouter.com/> |
+| Bootstrap | <https://react-bootstrap.github.io/>                   |
+| Font Awesome         | <https://fontawesome.com/>                        |
+| Animate.css         | <https://animate.style/>                        |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Structure
+### Back End
 
-### `npm run eject`
+- `/server.js` - Entry point for the application. It defines the express server and connects it to Postgres database.
+- `config/` - Configuration for the database and dialect.
+- `controllers/` - Controllers for the requests being made to the database.
+- `routes/` - Routes for each of the controllers.
+- `models/` - Configuration of what attributes and methods each of the tables will have in the database.
+- `migrations/` - Configuration to manage the state of the database.
+- `seeders/` - Data to be used to fill out the tables in the database.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Front End
+- `/app.js` - Entry point for the application, signin/signup, basic API calls, routes to components.
+- `/src/components/` - To render each of the potfolio's components.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Installation
++ No special installation required: [Go to App](http://beer-encyclopaedia.surge.sh)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+Ana Cecilia Maldonado Cervantes - April 2021
