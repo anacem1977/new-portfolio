@@ -95,17 +95,17 @@ a.ga:hover, a.faIcon:hover {
 }
 
 @keyframes greetings {
-  0% {left: 31vw; top: -18vh; background-color: #fce6db}
+  0% {left: 28vw; top: -18vh; background-color: #fce6db}
   20% {background-color: #fce6db}
   40% {background-color: #fce6db}
   60% {background-color: #fce6db}
   80% {background-color: #fce6db}
   95% {background-color: #fce6db}
-  100% {left: 66vw; top: -18vh}
+  100% {left: 64vw; top: -18vh; width: 200px}
 }
 
 .square {
-  width: 410px;
+  width: 500px;
   height: 75px;
   position: relative;
   animation-name: greetings;
@@ -280,4 +280,9 @@ a.localLink:hover, a.localLink:active, a.backToTop:hover, a.backToTop:active {
 .certificate {
   box-shadow: 5px 5px 5px #59554e;
   margin-bottom: 1rem;
+}
+
+.showIcons {
+  color:#fa4700;
+  padding: 2rem 1rem 0 1rem;
 }

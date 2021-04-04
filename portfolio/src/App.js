@@ -4,7 +4,7 @@ import { Route, Link } from "react-router-dom"
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {fab} from "@fortawesome/free-brands-svg-icons"
-import {faEnvelope, faHandPointLeft} from "@fortawesome/free-solid-svg-icons"
+import {faEnvelope, faHandPointLeft, faDatabase} from "@fortawesome/free-solid-svg-icons"
 
 import Home from "./components/homePage"
 import WhoAmI from "./components/whoAmI"
@@ -18,7 +18,7 @@ import Nasa from "./components/nasa"
 import Beer from "./components/beer"
 import Contact from "./components/contact"
 
-library.add(fab, faEnvelope, faHandPointLeft)
+library.add(fab, faEnvelope, faHandPointLeft, faDatabase)
 
 class App extends Component {
   constructor(props) {
