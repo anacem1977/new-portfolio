@@ -86,6 +86,7 @@ a.ga:hover, a.faIcon:hover {
   grid-column-start: 1;
   justify-self: start;
   max-width: 38vw;
+  box-shadow: 5px 5px 5px #59554e;
 }
 
 .me {
