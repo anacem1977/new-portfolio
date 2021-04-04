@@ -1,7 +1,5 @@
 # Ana Cecilia Maldonado Cervantes - Personal Portfolio
 
-<div align="center">
-
 My very own personal portfolio for everyone (including potential employers) to check out my experience and projects 👩🏻‍💻
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/anacem1977/new-portfolio?style=plastic)
@@ -37,8 +35,7 @@ You will be able to navigate through the different sections of the portfolio to 
 | PostgresSQL     | <https://www.postgresql.org/>                     |
 | React        | <https://reactjs.org/>                       |
 | Axios       | <https://www.npmjs.com/package/axios/>                |
-| React Router  | <https://reactrouter.com/> |
-| Bootstrap | <https://react-bootstrap.github.io/>                   |
+| React Router  | <https://reactrouter.com/> |                   |
 | Font Awesome         | <https://fontawesome.com/>                        |
 | Animate.css         | <https://animate.style/>                        |
 
@@ -58,7 +55,7 @@ You will be able to navigate through the different sections of the portfolio to 
 
 ### Front End
 - `/app.js` - Entry point for the application, signin/signup, basic API calls, routes to components.
-- `/src/components/` - To render each of the potfolio's components.
+- `/src/components/` - Render each of the potfolio's components.
 
 ---
 
