@@ -1,6 +1,8 @@
 import './App.css';
 import react, {Component} from "react"
 import { Route, Link } from "react-router-dom"
+import axios from "axios";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {fab} from "@fortawesome/free-brands-svg-icons"
@@ -29,20 +31,20 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll, {passive: true})
-  }
+  // componentDidMount() {
+  //   window.addEventListener("scroll", this.handleScroll, {passive: true})
+  // }
 
-  componentWillUnmount(){
-    window.removeEventListener("scroll", this.handleScroll)
-  }
+  // componentWillUnmount(){
+  //   window.removeEventListener("scroll", this.handleScroll)
+  // }
   
-  handleScroll = (event) => {
-    this.setState ({
-      scroll: event.path[1].scrollY
-    })
-    console.log(this.state.scroll)
-  }
+  // handleScroll = (event) => {
+  //   this.setState ({
+  //     scroll: event.path[1].scrollY
+  //   })
+  //   console.log(this.state.scroll)
+  // }
 
   render( ) {
     return (
