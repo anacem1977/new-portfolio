@@ -3,7 +3,37 @@ import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Resume extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            diploma: false,
+            certificate: false
+        }
+    }
 
+showDiploma = () => {
+    this.setState ({
+        diploma: !this.state.diploma
+    })
+}
+
+hideDiploma = () => {
+    this.setState ({
+        diploma: false
+    })
+}
+
+showCertificate = () => {
+    this.setState ({
+        certificate: !this.state.certificate
+    })
+}
+
+hideCertificate = () => {
+    this.setState ({
+        certificate: false
+    })
+}
 
 render () {
     return (
@@ -67,11 +97,27 @@ render () {
                             <li>Front End Web Development, Full Stack Development, Front End Framework and Native Python.</li>
                         </ul>
                     </div>
-                    <div className="resumePic">
-                    <a href="/SEIR.png" target="_blank">
-                        <img src="https://i.imgur.com/Ikf3ftx.png" alt="certificate" className="certificate"/>
-                    </a>
-                    </div>
+                    
+                    {this.state.certificate ? 
+                        <div className="modalCertificate fade" role="dialog" id="myModal">
+                            <div className="modal-dialog">
+                                <div className="modal-footer">
+                                    <button type="button" className="btnSmall" data-dismiss="modal" onClick={this.hideCertificate}>
+                                        Close
+                                    </button>
+                                </div>
+                                <div className="modal-body">
+                                    <img src="https://i.imgur.com/Ikf3ftx.png" alt="certificate" className="certificateFull"/>
+                                </div>
+                        </div>
+                    </div>   
+                    :  
+                        <div className="resumePic">
+                            <button onClick={this.showCertificate} className="show">
+                                <img src="https://i.imgur.com/Ikf3ftx.png" alt="certificate" className="certificate" />
+                            </button>
+                        </div>
+                    }
                 
                     <div className="text">
                         <h5>Diploma: Data Science</h5>
@@ -80,11 +126,28 @@ render () {
                             <li>Data Science: Decision Making with Predictive Analysis</li>
                         </ul>
                     </div>
-                    <div className="resumePic">
-                    <a href="/dataScience.png" target="_blank">
-                        <img src="https://i.imgur.com/fMyFFJC.png" alt="diploma" className="certificate"/>
-                    </a>
-                    </div>
+                  
+                    {this.state.diploma ? 
+                        <div className="modalDiploma fade" role="dialog" id="myModal">
+                            <div className="modal-dialog">
+                                <div className="modal-footer">
+                                    <button type="button" className="btnSmall" data-dismiss="modal" onClick={this.hideDiploma}>
+                                        Close
+                                    </button>
+                                </div>
+                                <div className="modal-body">
+                                    <img src="https://i.imgur.com/fMyFFJC.png" alt="diploma" className="diplomaFull"/>
+                                </div>
+                        </div>
+                    </div>   
+                    :  
+                        <div className="resumePic">
+                            <button onClick={this.showDiploma} className="show">
+                                <img src="https://i.imgur.com/fMyFFJC.png" alt="diploma" className="certificate" />
+                            </button>
+                        </div>
+                    }
+
                 </div>
                 
                 <h5>Bachelor's Degree: Industrial and Systems Engineering</h5>
