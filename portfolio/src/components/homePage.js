@@ -31,7 +31,7 @@ render () {
 
             <div className="intro">
                 <hr></hr>
-                <p>With almost 20 years of successful experience in the Manufacturing indsutry. Recognized consistently for performance excellence and contributions to success. Enthusiastic and eager to contribute through hard work, attention to detail and excellent organizational skills. Motivated to learn, grow and excel.</p>
+                <p>With almost 20 years of successful experience in the Manufacturing industry. Recognized consistently for performance excellence and contributions to success. Enthusiastic and eager to contribute through hard work, attention to detail and excellent organizational skills. Motivated to learn, grow and excel.</p>
             </div>
 
         </div>
