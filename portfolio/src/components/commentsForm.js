@@ -28,9 +28,9 @@ class Comment extends Component {
           comments: this.state.comments
         };
         const response = await axios.post(
-          "http://localhost:3005/comment/add"
-        //   || 
-        //   "https://beer-encyclopaedia.herokuapp.com/user/signup"
+        //   "http://localhost:3005/comment/add"
+        // //   || 
+          "https://acmc-personal-portfolio.herokuapp.com//comment/add"
           , addComment);
         console.log(response.data)
         this.setState({
