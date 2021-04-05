@@ -20,6 +20,7 @@ import Nasa from "./components/nasa"
 import Beer from "./components/beer"
 import Contact from "./components/contact"
 import Comment from "./components/commentsForm"
+import Portafolio from "./components/portafolio"
 
 library.add(fab, faEnvelope, faHandPointLeft, faDatabase, faCommentDots)
 
@@ -70,6 +71,7 @@ class App extends Component {
         <Route path="/trivia" render= {(props) => ( <Trivia/>)} />
         <Route path="/nasa" render= {(props) => ( <Nasa/>)} />
         <Route path="/beer" render= {(props) => ( <Beer/>)} />
+        <Route path="/portfolio" render= {(props) => ( <Portafolio/>)} />
         <Route path="/contact" render= {(props) => ( <Contact/>)} />
         <Route path="/comment" render= {(props) => ( <Comment/>)} />
 

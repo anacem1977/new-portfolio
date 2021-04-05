@@ -10,7 +10,7 @@ render () {
         <div className="subtitle">
             <div>
                 <h3>What I've done?</h3>
-                <p>I'm still learning, but here are some of the projects I did while attending the Software Engineering Immersive Reskilling program.</p>
+                <p>I'm still learning, but here are some of the projects I did while attending the Software Engineering Immersive Reskilling program, including the portfolio you're checking out right now!.</p>
 
                 <div className="resp">
                     <div className="gallery">
@@ -36,6 +36,15 @@ render () {
                             <img src="https://i.imgur.com/CbR7JX4.png?1" alt="beer encyclopedia" width="350vw"/>
                         </Link>
                         <div className="description">Beer Encyclopedia</div>
+                    </div>
+                </div>
+
+                <div className="resp">
+                    <div className="gallery">
+                        <Link to = "/portfolio">
+                            <img src="https://i.imgur.com/3E6tBqe.png?1" alt="portfolio" width="350vw"/>
+                        </Link>
+                        <div className="description">Portfolio</div>
                     </div>
                 </div>
                 

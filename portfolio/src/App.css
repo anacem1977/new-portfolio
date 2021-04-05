@@ -105,7 +105,7 @@ a.ga:hover, a.faIcon:hover {
 }
 
 .square {
-  width: 500px;
+  width: 800px;
   height: 75px;
   position: relative;
   animation-name: greetings;
@@ -157,7 +157,7 @@ div.gallery {
   margin: 1rem;
   border: 1px solid #59554e;
   float: left;
-  width: 25vw;
+  width: 18vw;
 }
 
 div.gallery:hover {
@@ -172,14 +172,15 @@ div.gallery img {
 
 div.description {
   padding: 1rem;
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .resp {
   justify-content: center;
-  padding: 0 1rem;
+  padding: 0 2rem;
   float: left;
-  width: 30%
+  width: 18%
 }
 
 @media only screen and (max-width: 700px) {
@@ -297,11 +298,6 @@ a.localLink:hover, a.localLink:active, a.backToTop:hover, a.backToTop:active {
   align-self: center;
 }
 
-.certificate {
-  box-shadow: 5px 5px 5px #59554e;
-  margin-bottom: 1rem;
-}
-
 .showIcons {
   color:#fa4700;
   padding: 2rem 1rem 0 1rem;
@@ -364,7 +360,7 @@ hr {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  left: 10%;
   padding: 1rem;
   background-color: #fce6db;
   opacity: 0.95;
@@ -373,7 +369,7 @@ hr {
 
 .btnSmall {
   font-size: 18px;
-  margin: 0 0 1rem 90%;
+  margin: 0 0 1rem 85%;
   padding: 0.5rem;
   border: 4px solid #fa4700;
   border-radius: 5px;
@@ -390,4 +386,11 @@ hr {
 
 .show {
   cursor: pointer;
+  background-color: #fce6db;
+  border: 0px
+}
+
+.certificate {
+  box-shadow: 5px 5px 5px #59554e;
+  margin-bottom: 1rem;
 }
