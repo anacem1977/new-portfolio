@@ -33,12 +33,12 @@ section.topColor {
 }
 
 .subtitle {
-  padding: 10rem 4rem 1rem 4rem;
+  padding: 7rem 4rem 1rem 4rem;
   color: #593c3e;
 }
 
 .intro {
-  padding: 5rem 4rem 1rem 4rem;
+  padding: 0rem 4rem 1rem 4rem;
   color: #593c3e;
 }
 
@@ -95,17 +95,17 @@ a.ga:hover, a.faIcon:hover {
 }
 
 @keyframes greetings {
-  0% {left: 28vw; top: -18vh; background-color: #f2c185}
+  0% {left: 18vw; top: -20vh; background-color: #f2c185}
   20% {background-color: #f2c185}
   40% {background-color: #f2c185}
   60% {background-color: #f2c185; width: 300px}
   80% {background-color: #f2c185}
   95% {background-color: #f2c185}
-  100% {left: 64vw; top: -18vh; width: 200px}
+  100% {left: 67vw; top: -20vh; width: 200px}
 }
 
 .square {
-  width: 800px;
+  width: 600px;
   height: 80px;
   position: relative;
   animation-name: greetings;

@@ -30,7 +30,7 @@ class Comment extends Component {
         const response = await axios.post(
         //   "http://localhost:3005/comment/add"
         // //   || 
-          "https://acmc-personal-portfolio.herokuapp.com//comment/add"
+          "https://acmc-personal-portfolio.herokuapp.com/comment/add"
           , addComment);
         console.log(response.data)
         this.setState({
