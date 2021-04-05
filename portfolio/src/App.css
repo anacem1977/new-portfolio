@@ -85,7 +85,7 @@ a.ga:hover, a.faIcon:hover {
 .myPic {
   grid-column-start: 1;
   justify-self: start;
-  max-width: 38vw;
+  max-width: 25vw;
   box-shadow: 5px 5px 5px #593c3e;
 }
 
@@ -105,7 +105,7 @@ a.ga:hover, a.faIcon:hover {
 }
 
 .square {
-  width: 600px;
+  width: 100vw;
   height: 80px;
   position: relative;
   animation-name: greetings;
