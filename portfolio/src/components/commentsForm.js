@@ -8,13 +8,13 @@ class Comment extends Component {
             name: "",
             email: "",
             comments: "",
-            submitted: false
+            submitted: false,
+            modal: false
         }
     }
 
     handleData = (event) => {
         event.preventDefault();
-        console.log(event.target.value)
         this.setState({
             [event.target.name]: event.target.value
         })
@@ -27,7 +27,6 @@ class Comment extends Component {
           email: this.state.email,
           comments: this.state.comments
         };
-        console.log(addComment);
         const response = await axios.post(
           "http://localhost:3005/comment/add"
         //   || 
@@ -40,20 +39,44 @@ class Comment extends Component {
         console.log(this.state.submitted)
       }
 
+      cleanForm = () => {
+          this.setState({
+            name: "",
+            email: "",
+            comments: "",
+            submitted: false
+          })
+      }
+
 render () {
     return (
         <div className="subtitle">
             <form>
                 <div className="formContainer">
-                    <input type="text" id="name" name="name" placeholder="Your name" autofocus required onChange={this.handleData}></input>
-                    <input type="email" id="email" name="email" placeholder="Your e-mail" required onChange={this.handleData}></input>
+                    <input type="text" id="name" name="name" placeholder="Your name" autofocus required value={this.state.name} onChange={this.handleData}></input>
+                    <input type="email" id="email" name="email" placeholder="Your e-mail" required value={this.state.email} onChange={this.handleData}></input>
                 </div>
                 <br></br>
-                <textarea name="comments" id="comments" placeholder="Feedback" required onChange={this.handleData}></textarea>
+                <textarea name="comments" id="comments" placeholder="Feedback" required value={this.state.comments} onChange={this.handleData}></textarea>
                 <br></br>
                 <button type="submit" className="submitButton" onClick={this.handleComment}>Submit</button>
             </form>
- 
+
+            {this.state.submitted ? 
+                <div className="modal fade" role="dialog" id="myModal">
+                <div className="modal-dialog">
+                    <div className="modal-body">
+                        <p>Thank you for your feedback!</p>
+                    </div>
+                    <div className="modal-footer">
+                        <button type="button" className="btn" data-dismiss="modal" onClick={this.cleanForm}>
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>   
+            : <p></p>}
+            
 
         </div> 
     )

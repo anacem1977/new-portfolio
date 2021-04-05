@@ -24,27 +24,6 @@ import Comment from "./components/commentsForm"
 library.add(fab, faEnvelope, faHandPointLeft, faDatabase, faCommentDots)
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      scroll: 0
-    }
-  }
-
-  // componentDidMount() {
-  //   window.addEventListener("scroll", this.handleScroll, {passive: true})
-  // }
-
-  // componentWillUnmount(){
-  //   window.removeEventListener("scroll", this.handleScroll)
-  // }
-  
-  // handleScroll = (event) => {
-  //   this.setState ({
-  //     scroll: event.path[1].scrollY
-  //   })
-  //   console.log(this.state.scroll)
-  // }
 
   render( ) {
     return (

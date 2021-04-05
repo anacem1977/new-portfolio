@@ -217,7 +217,7 @@ a.projectLink, a.projectLink:link, a.projectLink:visited, a.projectLink:hover, a
   box-shadow: 5px 5px 5px #59554e;
 }
 
-.submitButton {
+.submitButton, .btn {
   font-size: 22px;
   margin-top: 1rem;
   padding: 0.5rem;
@@ -229,7 +229,7 @@ a.projectLink, a.projectLink:link, a.projectLink:visited, a.projectLink:hover, a
   color: #59554e
 }
 
-a.projectLink:hover, a.projectLink:active, .submitButton:hover {
+a.projectLink:hover, a.projectLink:active, .submitButton:hover, .submitButton:active, .btn:hover, .btn:active {
   background-color: #fa4700;
   color: #fce6db;
 }
@@ -303,7 +303,7 @@ a.localLink:hover, a.localLink:active, a.backToTop:hover, a.backToTop:active {
   padding: 2rem 1rem 0 1rem;
 }
 
-#name, #email, #comment {
+#name, #email, #comments {
   font-size: 20px;
   font-family: 'Arimo', sans-serif;
   margin-top: 1rem;
@@ -335,4 +335,17 @@ textarea {
 
 form {
   margin-top: 2rem;
+}
+
+.modal {
+  border: 5px solid #fa4700;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 1;
+  top: 15%;
+  left: 33%;
+  padding: 1rem;
+  background-color: #fce6db;
+  opacity: 0.9;
+  color: #4a4242;
 }
