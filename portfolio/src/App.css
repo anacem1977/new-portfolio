@@ -79,12 +79,12 @@ a.ga:hover, a.faIcon:hover {
 
 .container {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
 }
 
 .myPic {
   grid-column-start: 1;
-  justify-self: start;
+  justify-self: center;
   max-width: 25vw;
   box-shadow: 5px 5px 5px #593c3e;
 }

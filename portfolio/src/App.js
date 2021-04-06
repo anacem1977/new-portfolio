@@ -6,7 +6,7 @@ import axios from "axios";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {fab} from "@fortawesome/free-brands-svg-icons"
-import {faEnvelope, faHandPointLeft, faDatabase, faCommentDots} from "@fortawesome/free-solid-svg-icons"
+import {faEnvelope, faHandPointLeft, faDatabase, faCommentDots, faCode} from "@fortawesome/free-solid-svg-icons"
 
 import Home from "./components/homePage"
 import WhoAmI from "./components/whoAmI"
@@ -22,7 +22,7 @@ import Contact from "./components/contact"
 import Comment from "./components/commentsForm"
 import Portafolio from "./components/portafolio"
 
-library.add(fab, faEnvelope, faHandPointLeft, faDatabase, faCommentDots)
+library.add(fab, faEnvelope, faHandPointLeft, faDatabase, faCommentDots, faCode)
 
 class App extends Component {
 

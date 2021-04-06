@@ -24,6 +24,7 @@ render () {
                 </ul>
 
                 <p>I hope you enjoyed taking a peek at my recent work and newly learned skills and expect to hear back from you soon! Feel free to leave any comments or suggestions you have for me → 
+                    <space> </space>
                     <Link to = "/comment" className="faIcon">
                         <FontAwesomeIcon icon="comment-dots"></FontAwesomeIcon>
                     </Link>

@@ -50,7 +50,16 @@ render () {
                 
                 <div className="clear"></div>
 
-                <p>After finishing the program, I've continued learning and practicing my skills, so you can click here →<a href="https://www.hackerrank.com/anace_m" target="_blank" rel="noreferrer" className="faIcon"><FontAwesomeIcon icon={['fab', 'hackerrank']}></FontAwesomeIcon></a> to see the badges and certifications I've received on Hacker Rank so far.</p>
+                <p>After finishing the program, I've continued learning and practicing my skills, so you can click here → <space> </space>
+                    <a href="https://www.hackerrank.com/anace_m" target="_blank" rel="noreferrer" className="faIcon">
+                        <FontAwesomeIcon icon={['fab', 'hackerrank']}></FontAwesomeIcon>
+                    </a> 
+                    <space> </space>
+                    and here → <space> </space>
+                    <a href="https://www.codecademy.com/users/anacem1977/achievements" target="_blank" rel="noreferrer" className="faIcon">
+                        <FontAwesomeIcon icon="code"></FontAwesomeIcon>
+                    </a>
+                    <space> </space>to see the badges and certifications I've received on Hacker Rank and codecademy so far.</p>
             </div>
 
         </div>
