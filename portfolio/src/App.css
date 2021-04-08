@@ -85,6 +85,7 @@ a.ga:hover, a.faIcon:hover {
 .myPic {
   grid-column-start: 1;
   justify-self: center;
+  align-self: center;
   max-width: 25vw;
   box-shadow: 5px 5px 5px #593c3e;
 }
@@ -392,4 +393,33 @@ hr {
 .certificate {
   box-shadow: 5px 5px 5px #593c3e;
   margin-bottom: 1rem;
+}
+
+/* iPad */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px) {
+  a.topLink {
+    font-size: 20px;
+  };
+  .subtitle.p {
+    font-size: 24px;
+  };
+  nav.vertical {
+    top: 30vh;
+  }
+}
+
+@media only screen
+and (min-width: 375px)
+and (max-width: 812px) {
+  a.topLink {
+    font-size: 16px;
+  };
+  .subtitle.p {
+    font-size: 18px;
+  };
+  nav.vertical {
+    top: 30vh;
+  }
 }
