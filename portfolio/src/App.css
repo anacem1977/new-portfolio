@@ -158,7 +158,7 @@ div.gallery {
   margin: 1rem;
   border: 1px solid #593c3e;
   float: left;
-  width: 18vw;
+  width: 20vw;
 }
 
 div.gallery:hover {
@@ -184,9 +184,9 @@ div.description {
   width: 18%
 }
 
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 700px) {
   .resp {
-    width: 50%;
+    width: 100%;
     margin: 1rem 0
   }
 }
@@ -195,7 +195,7 @@ div.description {
   .resp {
     width: 100%
   }
-}
+} */
 
 .clear:after {
   content: "";
@@ -395,31 +395,136 @@ hr {
   margin-bottom: 1rem;
 }
 
-/* iPad */
-@media only screen
-and (min-width: 768px)
-and (max-width: 1024px) {
-  a.topLink {
-    font-size: 20px;
-  };
-  .subtitle.p {
-    font-size: 24px;
-  };
-  nav.vertical {
-    top: 30vh;
-  }
+/* iPhone */
+@keyframes greetingsiPhone {
+  0% {left: -6vw; top: -10vh; background-color: #f2c185}
+  20% {background-color: #f2c185; width: 250px}
+  40% {background-color: #f2c185; width: 200px}
+  60% {background-color: #f2c185; width: 150px}
+  80% {background-color: #f2c185; width: 100px}
+  95% {background-color: #f2c185; width: 50px}
+  100% {background-color: #f2c185; left: 69vw; top: -10vh; width: 20px}
 }
 
 @media only screen
-and (min-width: 375px)
-and (max-width: 812px) {
-  a.topLink {
+and (min-device-width: 375px)
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) {
+  .App a.topLink, .App a.projectLink, .App .submitButton {
     font-size: 16px;
-  };
-  .subtitle.p {
+  }
+  .App p {
     font-size: 18px;
-  };
-  nav.vertical {
-    top: 30vh;
+    text-align: left
+  }
+  .App .intro {
+    padding: 0
+  }
+  .App .msg {
+    font-size: 38px;
+    margin-top: 3rem;
+  }
+  .App .intro {
+    margin-top: -3rem;
+  }
+  .App .square {
+    width: 300px;
+    height: 60px;
+    animation-name: greetingsiPhone;
+  }
+  .App nav.vertical {
+    top: 50vh
+  }
+  .App .container {
+    grid-template-columns: 30% 75%;
+    margin-left: -1rem;
+  }
+  .App .myPic {
+    align-self: start;
+    justify-self: start;
+    margin-left: -1rem;
+    margin-top: 1.4rem;
+  }
+  .App .subtitle, .App .subtitle.resume {
+    padding: 7rem 3rem 1rem 3rem;
+  }
+  .App .subtitle h3 {
+    font-size: 24px;
+  }
+  .App nav.horizontalResume {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  .App a.localLink {
+    font-size: 18px;
+    padding: 0 1rem 0.75rem 0;
+  }
+  .App .resume h5 {
+    font-size: 20px;
+    text-align: left;
+  }
+  .App .scroll, .App .backToTop {
+    display: none
+  }
+  .App .subtitle.resume {
+    padding: 7rem 2rem 1rem 2rem;
+    margin-right: 2rem;
+  }
+  .App ul {
+    margin-left: -1rem;
+  }
+  .App li {
+    text-align: left;
+  }
+  .App .certificate {
+    width: 100px;
+    height: 100px;
+    margin-right: -4rem;
+  }
+  .App .resumeContainer {
+    margin-top: -2rem;
+  }
+  .App div.description {
+    font-size: 12px;
+    padding: 0.5rem
+  }
+  .App li.project {
+    font-size: 18px;
+    margin-left: 0.5rem;
+  }
+  .App nav.projectNav {
+    margin: 2rem 0 1.5rem -2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .App a.projectLink {
+    margin-bottom: 1rem;
+  }
+  .App .fa-3x {
+    margin-top: -1rem;
+  }
+  .App .fa-5x {
+    font-size: 3em;
+  }
+  .App .showIcons {
+    padding: 1rem 2rem 0 0
+  }
+  .App .icons {
+    margin: -1rem 0 0 1.5rem;
+  }
+  .App .formContainer {
+    display: inline-grid;
+    grid-template-columns: 160px 1rem 160px;
+  }
+  .App form {
+    margin-left: -2rem;
+  }
+  .App textarea {
+    width: 330px;
+    height: 150px;
+    margin-left: 0;
   }
 }

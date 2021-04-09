@@ -10,7 +10,7 @@ render () {
         <div className="subtitle">
             <div>
                 <h3>Where I'm going?</h3>
-                <p>I'd very much like to start a full-time career in Software Engineering working remotely for an awesome company: I enjoy very much working with Front-End web development and frameworks (HTML, CSS, JavaScript, React, Bootstrap), but I can also build Full Stack Applications (Express, node js, PostgreSQL) and I love coding with Python!</p>
+                <p>I'd very much like to start a full-time career in Software Engineering working remotely for an awesome company: I enjoy very much working with Front-End web development and frameworks (HTML, CSS, JavaScript, React, Bootstrap), but I can also build Full Stack Applications (Express, node js, PostgreSQL). I love coding with Python and I am already learning C#!</p>
             </div>
 
             <div className="icons">

@@ -42,7 +42,7 @@ render () {
 
                 <h3>ANA CECILIA MALDONADO CERVANTES</h3>
 
-                <nav className="horizontal">
+                <nav className="horizontalResume">
                     <a href="#workhistory" className="localLink">Work History</a>
                     <a href="#education" className="localLink">Education</a>
                     <a href="#skills" className="localLink">Skills</a>
