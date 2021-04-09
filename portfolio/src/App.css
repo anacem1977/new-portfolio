@@ -184,19 +184,6 @@ div.description {
   width: 18%
 }
 
-/* @media only screen and (max-width: 700px) {
-  .resp {
-    width: 100%;
-    margin: 1rem 0
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .resp {
-    width: 100%
-  }
-} */
-
 .clear:after {
   content: "";
   display: table;
@@ -395,7 +382,7 @@ hr {
   margin-bottom: 1rem;
 }
 
-/* iPhone */
+/* cell phone */
 @keyframes greetingsiPhone {
   0% {left: -6vw; top: -10vh; background-color: #f2c185}
   20% {background-color: #f2c185; width: 250px}
@@ -409,7 +396,8 @@ hr {
 @media only screen
 and (min-device-width: 375px), (min-device-width: 414px), (min-device-width: 360px)
 and (max-device-width: 812px), (max-device-width: 736px), (max-device-width: 780px)
-and (-webkit-min-device-pixel-ratio: 3) {
+/* and (-webkit-min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 2)  */
+{
   .App a.topLink, .App a.projectLink, .App .submitButton {
     font-size: 16px;
   }
@@ -520,7 +508,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
     grid-template-columns: 160px 1rem 160px;
   }
   .App form {
-    margin-left: -2rem;
+    margin: 0 auto;
   }
   .App textarea {
     width: 330px;
@@ -533,5 +521,125 @@ and (-webkit-min-device-pixel-ratio: 3) {
   }
   .App section.topColor {
     height: 13vh;
+  }
+}
+
+/* tablet */
+
+@keyframes greetingsiPad {
+  0% {left: 23vw; top: -9vh; background-color: #f2c185}
+  20% {background-color: #f2c185; width: 350px}
+  40% {background-color: #f2c185; width: 300px}
+  60% {background-color: #f2c185; width: 250px}
+  80% {background-color: #f2c185; width: 200px}
+  95% {background-color: #f2c185; width: 100px}
+  100% {background-color: #f2c185; left: 65vw; top: -9vh; width: 50px}
+}
+
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1366px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  .App a.topLink, .App a.projectLink, .App .submitButton {
+    font-size: 32px;
+  }
+  .App p {
+    font-size: 32px;
+    text-align: justify;
+  }
+  .App .intro {
+    padding: 2rem
+  }
+  .App .msg {
+    font-size: 64px;
+    margin-top: 8rem;
+  }
+  .App .intro {
+    margin-top: 0rem;
+  }
+  .App .square {
+    width: 400px;
+    height: 75px;
+    animation-name: greetingsiPad;
+  }
+  .App nav.vertical {
+    top: 40vh
+  }
+  .App .container {
+    grid-template-columns: 30% 70%;
+    margin-left: 0rem;
+  }
+  .App .subtitle, .App .subtitle.resume {
+    padding: 9rem 5rem 1rem 5rem;
+  }
+  .App .subtitle h3 {
+    font-size: 32px;
+    margin-top: 6rem;
+  }
+  .App nav.horizontalResume {
+    width: 100%;
+    grid-template-columns: 17% 17% 17% 17% 17% 15%;
+  }
+  .App a.localLink {
+    font-size: 24px;
+  }
+  .App .resume h5 {
+    font-size: 32px;
+  }
+  .App .subtitle.resume {
+    padding: 7rem 2rem 1rem 2rem;
+  }
+  .App ul {
+    margin-left: 0rem;
+    margin-right: 1rem;
+  }
+  .App li {
+    font-size: 26px;
+    text-align: justify;
+  }
+  .App .certificate {
+    width: 150px;
+    height: 150px;
+    margin-right: -5rem;
+  }
+  .App div.description {
+    font-size: 16px;
+  }
+  .App li.project {
+    font-size: 28px;
+    margin-left: 1rem;
+  }
+  .App nav.projectNav {
+    margin: 4rem 0 3rem 0;
+  }
+  .App .fa-3x {
+    margin-top: 0;
+    font-size: 4em
+  }
+  .App .resp {
+    padding: 0 1.5rem;
+  }
+  .App .gallery {
+    width: 15vw;
+  }
+  .App .fa-5x {
+    font-size: 4em;
+  }
+  .App .icons {
+    margin: 0;
+  }
+  .App .formContainer {
+    grid-template-columns: 50% 2rem 50%;
+  }
+  .App form {
+    margin: 4rem auto;
+  }
+  .App textarea {
+    width: 500px;
+    height: 200px;
+    margin-left: 2rem;
+  }
+  .App section.topColor {
+    height: 10vh;
   }
 }
