@@ -30,14 +30,14 @@ class App extends Component {
     return (
       <div className="App" handleScroll={this.hanldeScroll}>
         <section className="topColor">
-          <nav className="horizontal">
+          <nav className="horizontalFirst">
             <Link to ="/" className="topLink">Home</Link>
             <Link to = "/who" className="topLink">Who am I?</Link>
             <Link to = "/where" className="topLink">Where I've been?</Link>
             <Link to = "/what" className="topLink">What I've done?</Link>
             <Link to = "/going" className="topLink">Where I'm going?</Link>
           </nav>
-          <nav className="horizontal">
+          <nav className="horizontalSecond">
             <Link to = "/fun" className="topLink">Fun Facts</Link>
             <Link to = "/contact" className="topLink">Contact</Link>
           </nav>

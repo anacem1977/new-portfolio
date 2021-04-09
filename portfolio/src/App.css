@@ -150,7 +150,7 @@ a.topLink:hover, a.topLink:active {
   font-weight: bold;
 }
 
-nav.horizontal {
+nav.horizontalFirst {
   margin-bottom: 1rem;
 }
 
@@ -407,8 +407,8 @@ hr {
 }
 
 @media only screen
-and (min-device-width: 375px)
-and (max-device-width: 812px) 
+and (min-device-width: 375px), (min-device-width: 414px), (min-device-width: 360px)
+and (max-device-width: 812px), (max-device-width: 736px), (max-device-width: 780px)
 and (-webkit-min-device-pixel-ratio: 3) {
   .App a.topLink, .App a.projectLink, .App .submitButton {
     font-size: 16px;
@@ -446,7 +446,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
     margin-top: 1.4rem;
   }
   .App .subtitle, .App .subtitle.resume {
-    padding: 7rem 3rem 1rem 3rem;
+    padding: 9rem 3rem 1rem 3rem;
   }
   .App .subtitle h3 {
     font-size: 24px;
@@ -526,5 +526,12 @@ and (-webkit-min-device-pixel-ratio: 3) {
     width: 330px;
     height: 150px;
     margin-left: 0;
+  }
+  .App nav.horizontalFirst {
+    display: flex;
+    margin-top: -1rem;
+  }
+  .App section.topColor {
+    height: 13vh;
   }
 }
