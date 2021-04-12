@@ -339,6 +339,8 @@ form {
   color: #0f468c;
 }
 
+
+
 hr {
   border-top: 2px solid #bf5656;
 }
@@ -353,6 +355,7 @@ hr {
   padding: 1rem;
   background-color: #f2c185;
   opacity: 0.95;
+  overflow: scroll;
 }
 
 .btnSmall {
@@ -396,7 +399,7 @@ hr {
 @media only screen
 and (min-device-width: 375px), (min-device-width: 414px), (min-device-width: 360px)
 and (max-device-width: 812px), (max-device-width: 736px), (max-device-width: 780px)
-/* and (-webkit-min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 2)  */
+and (-webkit-min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 2) 
 {
   .App a.topLink, .App a.projectLink, .App .submitButton {
     font-size: 16px;
@@ -438,6 +441,7 @@ and (max-device-width: 812px), (max-device-width: 736px), (max-device-width: 780
   }
   .App .subtitle h3 {
     font-size: 24px;
+    margin-top: 3rem;
   }
   .App nav.horizontalResume {
     width: 300px;
@@ -468,9 +472,9 @@ and (max-device-width: 812px), (max-device-width: 736px), (max-device-width: 780
     text-align: left;
   }
   .App .certificate {
-    width: 100px;
-    height: 100px;
-    margin-right: -4rem;
+    width: 75px;
+    height: 75px;
+    margin-right: -2rem;
   }
   .App .resumeContainer {
     margin-top: -2rem;
@@ -522,6 +526,17 @@ and (max-device-width: 812px), (max-device-width: 736px), (max-device-width: 780
   }
   .App section.topColor {
     height: 13vh;
+  }
+  .App .diplomaFull, .App .certificateFull {
+    max-width: 100%
+  }
+  .modalDiploma, .modalCertificate {
+    top: 8rem;
+    width: 300px;
+  }
+  .btnSmall {
+    font-size: 16px;
+    margin: 0 0 1rem 0;
   }
 }
 
@@ -643,6 +658,17 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .App section.topColor {
     height: 10vh;
   }
+  .App .diplomaFull, .App .certificateFull {
+    max-width: 100%
+  }
+  .modalDiploma, .modalCertificate {
+    top: 8rem;
+    width: 300px;
+  }
+  .btnSmall {
+    font-size: 16px;
+    margin: 0 0 1rem 0;
+  }
 }
 
 /* laptop */
@@ -659,7 +685,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
 @media only screen
 and (min-device-width: 1200px)
-and (max-device-width: 1600px)
+and (max-device-width: 1800px)
 and (-webkit-min-device-pixel-ratio: 1), 
 (-webkit-min-device-pixel-ratio: 2) {
   .App a.topLink, .App a.projectLink, .App .submitButton {
@@ -702,6 +728,7 @@ and (-webkit-min-device-pixel-ratio: 1),
     margin: 0 auto
   }
   .App .subtitle h3 {
+    font-size: 36px;
     margin-top: 3rem;
   }
   .App .certificate {
@@ -711,5 +738,26 @@ and (-webkit-min-device-pixel-ratio: 1),
   }
   .App section.topColor {
     height: 13vh;
+  }
+  .App nav.horizontalResume {
+    width: 100%;
+    grid-template-columns: 17% 17% 17% 17% 17% 15%;
+  }
+  .App a.localLink {
+    font-size: 26px;
+  }
+  .App .diplomaFull, .App .certificateFull {
+    max-width: 100%
+  }
+  .modalDiploma, .modalCertificate {
+    top: 5rem;
+    width: 43vw;
+  }
+  .modalCertificate {
+    width: 65vw;
+  }
+  .btnSmall {
+    font-size: 18px;
+    margin: 0 0 1rem 0;
   }
 }
