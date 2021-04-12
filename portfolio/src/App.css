@@ -517,6 +517,7 @@ and (max-device-width: 812px), (max-device-width: 736px), (max-device-width: 780
   }
   .App nav.horizontalFirst {
     display: flex;
+    justify-content: space-around;
     margin-top: -1rem;
   }
   .App section.topColor {
@@ -641,5 +642,74 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
   .App section.topColor {
     height: 10vh;
+  }
+}
+
+/* laptop */
+
+@keyframes greetingsLap {
+  0% {left: 26vw; top: -19vh; background-color: #f2c185}
+  20% {background-color: #f2c185; width: 450px}
+  40% {background-color: #f2c185; width: 350px}
+  60% {background-color: #f2c185; width: 250px}
+  80% {background-color: #f2c185; width: 200px}
+  95% {background-color: #f2c185; width: 100px}
+  100% {background-color: #f2c185; left: 60vw; top: -19vh; width: 50px}
+}
+
+@media only screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1), 
+(-webkit-min-device-pixel-ratio: 2) {
+  .App a.topLink, .App a.projectLink, .App .submitButton {
+    font-size: 26px;
+  }
+  .App nav.horizontalFirst {
+    margin-top: 0;
+  }
+  .App p {
+    font-size: 28px;
+    text-align: justify;
+  }
+  .App .intro {
+    padding: 0 2rem 2rem 2rem;
+  }
+  .App .msg {
+    font-size: 66px;
+    margin-top: 5rem;
+  }
+  .App .intro {
+    margin-top: 0rem;
+  }
+  .App .square {
+    width: 550px;
+    height: 80px;
+    animation-name: greetingsLap;
+  }
+  .App nav.vertical {
+    top: 60vh
+  }
+  .App .container {
+    grid-template-columns: 30% 55%;
+    margin-left: 10rem;
+  }
+  .App p.me {
+    margin-left: 2rem
+  }
+  .App div.where {
+    width: 60%;
+    margin: 0 auto
+  }
+  .App .subtitle h3 {
+    margin-top: 3rem;
+  }
+  .App .certificate {
+    width: 200px;
+    height: 200px;
+    margin-right: -5rem;
+  }
+  .App section.topColor {
+    height: 13vh;
   }
 }
