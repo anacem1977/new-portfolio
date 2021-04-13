@@ -339,8 +339,6 @@ form {
   color: #0f468c;
 }
 
-
-
 hr {
   border-top: 2px solid #bf5656;
 }
@@ -355,7 +353,6 @@ hr {
   padding: 1rem;
   background-color: #f2c185;
   opacity: 0.95;
-  overflow: scroll;
 }
 
 .btnSmall {
@@ -387,26 +384,23 @@ hr {
 
 /* cell phone */
 @keyframes greetingsiPhone {
-  0% {left: -6vw; top: -10vh; background-color: #f2c185}
-  20% {background-color: #f2c185; width: 250px}
-  40% {background-color: #f2c185; width: 200px}
-  60% {background-color: #f2c185; width: 150px}
-  80% {background-color: #f2c185; width: 100px}
-  95% {background-color: #f2c185; width: 50px}
-  100% {background-color: #f2c185; left: 69vw; top: -10vh; width: 20px}
+  0% {left: -10vw; top: -10vh; background-color: #f2c185}
+  20% {background-color: #f2c185; width: 80vw}
+  40% {background-color: #f2c185; width: 60vw}
+  60% {background-color: #f2c185; width: 50vw}
+  80% {background-color: #f2c185; width: 30vw}
+  95% {background-color: #f2c185; width: 20vw}
+  100% {background-color: #f2c185; left: 62vw; top: -10vh; width: 5vw}
 }
 
 @media only screen
-and (min-device-width: 375px), (min-device-width: 414px), (min-device-width: 360px)
-and (max-device-width: 812px), (max-device-width: 736px), (max-device-width: 780px)
-and (-webkit-min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 2) 
+and (min-width: 320px)
 {
   .App a.topLink, .App a.projectLink, .App .submitButton {
     font-size: 16px;
   }
   .App p {
     font-size: 18px;
-    text-align: left
   }
   .App .intro {
     padding: 0
@@ -419,12 +413,13 @@ and (-webkit-min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 2)
     margin-top: -3rem;
   }
   .App .square {
-    width: 300px;
+    width: 100vw;
     height: 60px;
     animation-name: greetingsiPhone;
   }
   .App nav.vertical {
-    top: 50vh
+    top: 50vh;
+    width: 1.5rem;
   }
   .App .container {
     grid-template-columns: 30% 75%;
@@ -509,15 +504,16 @@ and (-webkit-min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 2)
   }
   .App .formContainer {
     display: inline-grid;
-    grid-template-columns: 160px 1rem 160px;
+    grid-template-columns: 41vw 1rem 41vw;
+    margin-left: -1.5rem
   }
   .App form {
     margin: 0 auto;
   }
   .App textarea {
-    width: 330px;
+    width: 80vw;
     height: 150px;
-    margin-left: 0;
+    margin-left: -1rem;
   }
   .App nav.horizontalFirst {
     display: flex;
@@ -531,8 +527,8 @@ and (-webkit-min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 2)
     max-width: 100%
   }
   .modalDiploma, .modalCertificate {
-    top: 8rem;
-    width: 300px;
+    top: 6rem;
+    width: 70vw;
   }
   .btnSmall {
     font-size: 16px;
@@ -543,24 +539,22 @@ and (-webkit-min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 2)
 /* tablet */
 
 @keyframes greetingsiPad {
-  0% {left: 23vw; top: -9vh; background-color: #f2c185}
-  20% {background-color: #f2c185; width: 350px}
-  40% {background-color: #f2c185; width: 300px}
-  60% {background-color: #f2c185; width: 250px}
-  80% {background-color: #f2c185; width: 200px}
-  95% {background-color: #f2c185; width: 100px}
-  100% {background-color: #f2c185; left: 65vw; top: -9vh; width: 50px}
+  0% {left: -10vw; top: -15vh; background-color: #f2c185}
+  20% {background-color: #f2c185; width: 80vw}
+  40% {background-color: #f2c185; width: 60vw}
+  60% {background-color: #f2c185; width: 50vw}
+  80% {background-color: #f2c185; width: 30vw}
+  95% {background-color: #f2c185; width: 20vw}
+  100% {background-color: #f2c185; left: 62vw; top: -15vh; width: 5vw}
 }
 
 @media only screen
-and (min-device-width: 1024px)
-and (max-device-width: 1366px)
-and (-webkit-min-device-pixel-ratio: 2) {
+and (min-width: 1024px) {
   .App a.topLink, .App a.projectLink, .App .submitButton {
-    font-size: 32px;
+    font-size: 24px;
   }
   .App p {
-    font-size: 32px;
+    font-size: 26px;
     text-align: justify;
   }
   .App .intro {
@@ -568,25 +562,30 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
   .App .msg {
     font-size: 64px;
-    margin-top: 8rem;
+    margin-top: 4rem;
   }
   .App .intro {
     margin-top: 0rem;
   }
   .App .square {
-    width: 400px;
+    width: 100vw;
     height: 75px;
     animation-name: greetingsiPad;
   }
   .App nav.vertical {
-    top: 40vh
+    top: 40vh;
+    width: 2rem;
+    right: 10px
   }
   .App .container {
     grid-template-columns: 30% 70%;
     margin-left: 0rem;
   }
   .App .subtitle, .App .subtitle.resume {
-    padding: 9rem 5rem 1rem 5rem;
+    padding: 9rem 5rem 0rem 5rem;
+  }
+  div .hello {
+    margin-bottom: -4rem;
   }
   .App .subtitle h3 {
     font-size: 32px;
@@ -651,7 +650,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     margin: 4rem auto;
   }
   .App textarea {
-    width: 500px;
+    width: 50vw;
     height: 200px;
     margin-left: 2rem;
   }
@@ -663,7 +662,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
   .modalDiploma, .modalCertificate {
     top: 8rem;
-    width: 300px;
+    width: 50vw;
   }
   .btnSmall {
     font-size: 16px;
@@ -674,20 +673,17 @@ and (-webkit-min-device-pixel-ratio: 2) {
 /* laptop */
 
 @keyframes greetingsLap {
-  0% {left: 26vw; top: -16vh; background-color: #f2c185}
-  20% {background-color: #f2c185; width: 450px}
-  40% {background-color: #f2c185; width: 350px}
-  60% {background-color: #f2c185; width: 250px}
-  80% {background-color: #f2c185; width: 200px}
-  95% {background-color: #f2c185; width: 100px}
-  100% {background-color: #f2c185; left: 60vw; top: -16vh; width: 50px}
+  0% {left: -10vw; top: -16vh; background-color: #f2c185}
+  20% {background-color: #f2c185; width: 80vw}
+  40% {background-color: #f2c185; width: 60vw}
+  60% {background-color: #f2c185; width: 50vw}
+  80% {background-color: #f2c185; width: 30vw}
+  95% {background-color: #f2c185; width: 20vw}
+  100% {background-color: #f2c185; left: 60vw; top: -16vh; width: 5vw}
 }
 
 @media only screen
-and (min-device-width: 1200px)
-and (max-device-width: 1800px)
-and (-webkit-min-device-pixel-ratio: 1), 
-(-webkit-min-device-pixel-ratio: 2) {
+and (min-width: 1200px) {
   .App a.topLink, .App a.projectLink, .App .submitButton {
     font-size: 26px;
   }
@@ -709,7 +705,7 @@ and (-webkit-min-device-pixel-ratio: 1),
     margin-top: 0rem;
   }
   .App .square {
-    width: 550px;
+    width: 100vw;
     height: 90px;
     animation-name: greetingsLap;
   }
