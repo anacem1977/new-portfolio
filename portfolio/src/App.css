@@ -674,13 +674,13 @@ and (-webkit-min-device-pixel-ratio: 2) {
 /* laptop */
 
 @keyframes greetingsLap {
-  0% {left: 26vw; top: -19vh; background-color: #f2c185}
+  0% {left: 26vw; top: -16vh; background-color: #f2c185}
   20% {background-color: #f2c185; width: 450px}
   40% {background-color: #f2c185; width: 350px}
   60% {background-color: #f2c185; width: 250px}
   80% {background-color: #f2c185; width: 200px}
   95% {background-color: #f2c185; width: 100px}
-  100% {background-color: #f2c185; left: 60vw; top: -19vh; width: 50px}
+  100% {background-color: #f2c185; left: 60vw; top: -16vh; width: 50px}
 }
 
 @media only screen
@@ -695,7 +695,7 @@ and (-webkit-min-device-pixel-ratio: 1),
     margin-top: 0;
   }
   .App p {
-    font-size: 28px;
+    font-size: 26px;
     text-align: justify;
   }
   .App .intro {
@@ -710,7 +710,7 @@ and (-webkit-min-device-pixel-ratio: 1),
   }
   .App .square {
     width: 550px;
-    height: 80px;
+    height: 90px;
     animation-name: greetingsLap;
   }
   .App nav.vertical {
@@ -724,7 +724,7 @@ and (-webkit-min-device-pixel-ratio: 1),
     margin-left: 2rem
   }
   .App div.where {
-    width: 60%;
+    width: 80%;
     margin: 0 auto
   }
   .App .subtitle h3 {
@@ -759,5 +759,11 @@ and (-webkit-min-device-pixel-ratio: 1),
   .btnSmall {
     font-size: 18px;
     margin: 0 0 1rem 0;
+  }
+  .resume li {
+    font-size: 22px;
+  }
+  .App .resume h5 {
+    font-size: 26px;
   }
 }
