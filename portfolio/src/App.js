@@ -21,6 +21,7 @@ import Beer from "./components/beer"
 import Contact from "./components/contact"
 import Comment from "./components/commentsForm"
 import Portafolio from "./components/portafolio"
+import Weather from "./components/weather"
 
 library.add(fab, faEnvelope, faHandPointLeft, faDatabase, faCommentDots, faCode)
 
@@ -72,6 +73,7 @@ class App extends Component {
         <Route path="/nasa" render= {(props) => ( <Nasa/>)} />
         <Route path="/beer" render= {(props) => ( <Beer/>)} />
         <Route path="/portfolio" render= {(props) => ( <Portafolio/>)} />
+        <Route path="/weather" render= {(props) => ( <Weather/>)} />
         <Route path="/contact" render= {(props) => ( <Contact/>)} />
         <Route path="/comment" render= {(props) => ( <Comment/>)} />
 
