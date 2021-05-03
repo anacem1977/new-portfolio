@@ -1,7 +1,6 @@
 import './App.css';
 import react, {Component} from "react"
 import { Route, Link } from "react-router-dom"
-import axios from "axios";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -22,6 +21,7 @@ import Contact from "./components/contact"
 import Comment from "./components/commentsForm"
 import Portafolio from "./components/portafolio"
 import Weather from "./components/weather"
+import Chat from "./components/chatForm"
 
 library.add(fab, faEnvelope, faHandPointLeft, faDatabase, faCommentDots, faCode)
 
@@ -74,6 +74,7 @@ class App extends Component {
         <Route path="/beer" render= {(props) => ( <Beer/>)} />
         <Route path="/portfolio" render= {(props) => ( <Portafolio/>)} />
         <Route path="/weather" render= {(props) => ( <Weather/>)} />
+        <Route path="/chat" render= {(props) => ( <Chat/>)} />
         <Route path="/contact" render= {(props) => ( <Contact/>)} />
         <Route path="/comment" render= {(props) => ( <Comment/>)} />
 
