@@ -7,7 +7,8 @@ class Resume extends Component {
         super(props);
         this.state = {
             diploma: false,
-            certificate: false
+            certificate: false,
+            course: false
         }
     }
 
@@ -32,6 +33,18 @@ showCertificate = () => {
 hideCertificate = () => {
     this.setState ({
         certificate: false
+    })
+}
+
+showCourse = () => {
+    this.setState ({
+        course: !this.state.course
+    })
+}
+
+hideCourse = () => {
+    this.setState ({
+        course: false
     })
 }
 
@@ -115,6 +128,35 @@ render () {
                         <div className="resumePic">
                             <button onClick={this.showCertificate} className="show">
                                 <img src="https://i.imgur.com/Ikf3ftx.png" alt="certificate" className="certificate" />
+                            </button>
+                        </div>
+                    }
+
+                    <div className="text">
+                        <h5>Course: Agile Project Management</h5>
+                        <p><b>Coursera/Google- Online. May 2021</b></p>
+                        <ul>
+                            <li>Online non-credit course authorised by Google and offered through Coursera</li>
+                        </ul>
+                    </div>
+                  
+                    {this.state.course ? 
+                        <div className="modalDiploma fade" role="dialog" id="myModal">
+                            <div className="modal-dialog">
+                                <div className="modal-footer">
+                                    <button type="button" className="btnSmall" data-dismiss="modal" onClick={this.hideCourse}>
+                                        Close
+                                    </button>
+                                </div>
+                                <div className="modal-body">
+                                    <img src="https://i.imgur.com/7k4RZam.png?1" alt="certificate" className="diplomaFull"/>
+                                </div>
+                        </div>
+                    </div>   
+                    :  
+                        <div className="resumePic">
+                            <button onClick={this.showCourse} className="show">
+                                <img src="https://i.imgur.com/7k4RZam.png?1" alt="course" className="certificate" />
                             </button>
                         </div>
                     }
